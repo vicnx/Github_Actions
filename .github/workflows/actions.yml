@@ -1,8 +1,8 @@
 name: main_workflow
 on:
  push:
- branches:
- - nodejs_linter_job
+  branches:
+  - nodejs_linter_job
 jobs:
  linter-execution:
   name: linter-execution
