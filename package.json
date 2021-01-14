@@ -1,0 +1,10 @@
+
+{
+    "name": "github_actions",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+      "test": "jest"
+    },
+    "author": "Vicente"
+  }
