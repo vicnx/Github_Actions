@@ -26,7 +26,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Run jest tests
-      uses:
+      run: |
+       npm install jest
+       npm test
   environment_test_execution:
    name: environment_test_execution
    runs-on: ubuntu-latest
@@ -37,5 +39,5 @@ jobs:
     - name: hello
       uses: adeloyedeji/github-actions-hello@v1.0
       with: 
-       who-to-greet: "${{Env.DESTINATION_PERSON}}"
+      who-to-greet: "${{Env.DESTINATION_PERSON}}"
 
