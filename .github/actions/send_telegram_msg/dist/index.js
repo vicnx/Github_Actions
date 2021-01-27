@@ -205,7 +205,7 @@ const token = core.getInput("token_bot");
 const bot = new TelegramBot(token, {polling: false});
 var chatId=core.getInput("id_chat");
 const name = core.getInput("name");
-const commit = JSON.stringify(github.context.payload,undefined,2);
+const commit = github.context.payload;
 
 try {
   bot.sendMessage(chatId,`${name} commit realizado con exito:\nAutor: ${commit.head_commit.author.username}\nEmail: ${commit.head_commit.author.email}\nUrl:${commit.head_commit.url}\nMsg:${commit.head_commit.message}`);
