@@ -9,7 +9,7 @@ const name = core.getInput("name");
 const commit = JSON.stringify(github.context.payload,undefined,2);
 
 try {
-  bot.sendMessage(chatId,`${name} commit realizado con exito:\nAutor: ${commit.heat_commit.author.username}\nEmail: ${commit.heat_commit.author.email}\nUrl:${commit.heat_commit.url}\nMsg:${commit.heat_commit.message}`);
+  bot.sendMessage(chatId,`${name} commit realizado con exito:\nAutor: ${commit.head_commit.author.username}\nEmail: ${commit.head_commit.author.email}\nUrl:${commit.head_commit.url}\nMsg:${commit.head_commit.message}`);
 
   // bot.sendMessage(chatId,name+" Commit realizado con exito, aquí tienes la info del commit: \nAuthor");
 } catch (error) {
