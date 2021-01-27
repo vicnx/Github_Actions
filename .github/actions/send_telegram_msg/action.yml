@@ -1,0 +1,21 @@
+name: "Send Telegram MSG"
+description: "Envia mensaje a telegram"
+
+inputs:
+  token_bot:
+    description: "Token del bot de telegram"
+    required: true
+  id_chat:
+    description: "Id del chat donde se enviara el mensaje"
+    required: true 
+  name:
+    description: "Nombre" 
+    required: true
+
+outputs:
+  message:
+    description: "Response message"
+
+runs:
+  using: "node12"
+  main: "dist/index.js"

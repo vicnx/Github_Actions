@@ -1,0 +1,25 @@
+{
+  "name": "bot_telegram",
+  "version": "1.0.0",
+  "description": "Bot Telegram",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicnx/Github_Actions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vicnx/Github_Actions/issues"
+  },
+  "homepage": "https://github.com/vicnx/Github_Actions#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "node-telegram-bot-api": "^0.51.0"
+  }
+}
