@@ -1,9 +1,8 @@
 name: GET DOCUMENT
 
 on:
-  push:
-    branches:
-      - download_and_share_file
+  schedule:
+    - cron: "33 22 * * *"
 
 jobs:
   download_and_share_file:
