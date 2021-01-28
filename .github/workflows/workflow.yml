@@ -3,7 +3,7 @@ name: GET DOCUMENT
 on:
   workflow_dispatch:
   schedule:
-    - cron: 0 */6 * * *
+    - cron: 33 21 * * *
 
 jobs:
   download_and_share_file:
