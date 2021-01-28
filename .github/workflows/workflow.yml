@@ -1,8 +1,9 @@
 name: GET DOCUMENT
 
 on:
-  schedule:
-    - cron: "33 22 * * *"
+  push:
+   branches:
+   - send_telegram_action
 
 jobs:
   download_and_share_file:
