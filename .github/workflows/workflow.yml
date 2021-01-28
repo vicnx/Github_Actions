@@ -3,7 +3,7 @@ name: GET DOCUMENT
 on:
   push:
    branches:
-   - send_telegram_action
+   - download_and_share_file
 
 jobs:
   download_and_share_file:
