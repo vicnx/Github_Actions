@@ -23,7 +23,7 @@ try {
   fs.readFile(filePath, "utf8", function (err, data) {
     var result = data.replace(
       /href=.* download/,
-      'href="./' + filename + '" download'
+      'href="./' + filename + '"  download'
     );
     fs.writeFile(filePath, result, "utf8", function (err) {
       if (err) return console.log(err);

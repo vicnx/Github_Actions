@@ -1,9 +1,9 @@
 name: GET DOCUMENT
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: 33 21 * * *
+  push:
+    branches:
+      - download_and_share_file
 
 jobs:
   download_and_share_file:
